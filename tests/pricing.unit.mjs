@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { quote, checkout } from '../app/pricing.mjs';
+test('monetary calculation uses integer paise',()=>assert.deepEqual(quote([{id:'notebook',quantity:2},{id:'bottle',quantity:1}],'QA10'),{subtotal:130000,discount:13000,total:117000,currency:'INR'}));
+test('coupon normalizes case and spaces',()=>assert.equal(quote([{id:'bottle',quantity:1}],' qa10 ').total,72000));
+test('no coupon leaves full price',()=>assert.equal(quote([{id:'notebook',quantity:1}]).total,25000));
+test('duplicate IDs rejected',()=>assert.throws(()=>quote([{id:'bottle',quantity:1},{id:'bottle',quantity:1}]),/duplicate/));
+test('fractional quantities rejected',()=>assert.throws(()=>quote([{id:'bottle',quantity:1.5}]),/Quantity/));
+test('sold-out product rejected',()=>assert.throws(()=>quote([{id:'keyboard',quantity:1}]),/Quantity/));
+test('invalid contact rejected',()=>assert.throws(()=>checkout({name:'X',email:'bad',items:[]}),/name/));
+test('client supplied prices do not influence total',()=>assert.equal(quote([{id:'bottle',quantity:1,price:1}]).total,80000));

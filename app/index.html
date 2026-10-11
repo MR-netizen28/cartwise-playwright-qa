@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CartWise QA Lab</title><link rel="stylesheet" href="/styles.css"><script type="module" src="/app.js"></script></head>
+<body>
+<header><a class="brand" href="/">CartWise<span>QA LAB</span></a><span class="pill">Independent testing demo</span></header>
+<main>
+<section class="intro"><p class="eyebrow">BROWSE · VALIDATE · AUTOMATE</p><h1>A small store.<br>A complete testing journey.</h1><p>Search products, build a cart and validate checkout. All products and orders are fictional. No payment is collected.</p></section>
+<div class="layout"><section aria-labelledby="catalog-heading"><h2 id="catalog-heading">Product catalog</h2><div class="filters"><label>Search products<input id="search" type="search" placeholder="Try headphones"></label><label>Category<select id="category"><option>All</option><option>Stationery</option><option>Lifestyle</option><option>Electronics</option></select></label></div><p id="catalog-status" role="status"></p><div id="products" class="products"></div></section>
+<aside aria-labelledby="cart-heading"><div class="cart-panel"><h2 id="cart-heading">Your cart <span id="cart-count" data-testid="cart-count">0</span></h2><div id="cart-items"></div><div class="coupon"><label>Coupon code<input id="coupon" placeholder="QA10 saves 10%"></label><button id="apply-coupon" type="button">Apply coupon</button></div><p id="cart-message" role="status"></p><dl><div><dt>Subtotal</dt><dd id="subtotal" data-testid="subtotal">₹0.00</dd></div><div><dt>Discount</dt><dd id="discount" data-testid="discount">₹0.00</dd></div><div class="total"><dt>Total</dt><dd id="total" data-testid="total">₹0.00</dd></div></dl><h3>Demo checkout</h3><form id="checkout" novalidate><label>Name<input id="name" autocomplete="off" placeholder="Use a fictional name"></label><label>Email<input id="email" type="email" autocomplete="off" placeholder="qa@example.test"></label><button id="place-order" type="submit">Place demo order</button></form><p id="order-message" role="status"></p><p class="note">Local demo only. Use fictional details. Orders are not stored.</p></div></aside></div>
+<footer>CartWise QA Lab · AI-assisted portfolio starter · UI + API + boundary testing</footer>
+</main></body></html>

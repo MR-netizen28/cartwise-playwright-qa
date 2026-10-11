@@ -1,0 +1,177 @@
+{
+  "stats": {
+    "startTime": "2026-10-11T18:08:12.599Z",
+    "duration": 767.2919999999999,
+    "expected": 15,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "title": "API-01 catalog contract",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 36
+        }
+      ]
+    },
+    {
+      "title": "API-02 price tampering ignored; server computes total",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 11
+        }
+      ]
+    },
+    {
+      "title": "API-03 rejects empty cart",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 11
+        }
+      ]
+    },
+    {
+      "title": "API-03 rejects unknown product",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 7
+        }
+      ]
+    },
+    {
+      "title": "API-03 rejects zero quantity",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 11
+        }
+      ]
+    },
+    {
+      "title": "API-03 rejects negative quantity",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 6
+        }
+      ]
+    },
+    {
+      "title": "API-03 rejects fractional quantity",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 5
+        }
+      ]
+    },
+    {
+      "title": "API-03 rejects sold out",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 6
+        }
+      ]
+    },
+    {
+      "title": "API-03 rejects over stock",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 6
+        }
+      ]
+    },
+    {
+      "title": "API-03 rejects duplicate items",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 6
+        }
+      ]
+    },
+    {
+      "title": "API-04 rejects invalid coupon",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 6
+        }
+      ]
+    },
+    {
+      "title": "API-05 rejects malformed JSON",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 6
+        }
+      ]
+    },
+    {
+      "title": "API-06 quote has exact monetary values",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 13
+        }
+      ]
+    },
+    {
+      "title": "API-07 invalid email rejected",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 4
+        }
+      ]
+    },
+    {
+      "title": "API-08 missing route returns 404",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 5
+        }
+      ]
+    }
+  ]
+}
